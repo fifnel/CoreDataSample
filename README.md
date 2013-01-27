@@ -1,9 +1,26 @@
-# CoreData + GHUnit + OCMock のベースとなるプロジェクト
+# CoreDataSample
 
-CoreDataをつかったアプリの下地になるプロジェクトです。
+## これはなに？
 
-CoreDataSingletonを削除すれば通常のアプリにも使えます。
+XocdeのテンプレのCoreDataアプリにGHUnitとOCMockを組み込んだものです。
+何か新しいアプリを作る場合の下地に使います。
 
-GHUnitとOCMockをSubmoduleとして組み込んでいます。
-GHUnitはProject-iOSディレクトリ内でmakeしてから使って下さい。
+GHUnitとOCMockはCocoaPodsで管理されています。
 
+## インストール方法
+
+GHUnitとOCMockはCocoaPodsでインストールをして下さい。
+
+インストール方法はターミナルから以下のコマンドを叩いて下さい。
+
+```
+gem install cocoapods
+```
+
+その後、CoreDataSampleのルートディレクトリで
+
+```
+pod install
+```
+
+と叩きます。
